@@ -5,7 +5,7 @@ An elegant, minimalist web application for **Ro Coffee**, a specialty coffee roa
 ## 🚀 Features
 
 ### 🤖 Ro AI Barista
-Integrated with **Google Gemini 3 Flash**, the AI Barista provides real-time, context-aware recommendations. Users can describe their mood or cravings, and the assistant suggests the perfect match from the Ro Coffee menu.
+Users can describe their mood or cravings, and the assistant suggests the perfect match from the Ro Coffee menu.
 
 ### 🧪 Interactive Coffee Lab
 A technical tool for specialty coffee enthusiasts. Select your brewing method (V60, Chemex, Aeropress, etc.) to calculate the precise "Golden Ratio" of coffee-to-water, complete with grind size and temperature guides.
