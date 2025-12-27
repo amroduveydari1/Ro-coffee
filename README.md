@@ -1,20 +1,59 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Ro Coffee | Digital Brand Experience
 
-# Run and deploy your AI Studio app
+An elegant, minimalist web application for **Ro Coffee**, a specialty coffee roastery and café based in Yenişehir, Mersin. This project focuses on high-fidelity aesthetics, seamless user interaction, and advanced AI integration to reflect the café's dedication to craft.
 
-This contains everything you need to run your app locally.
+## 🚀 Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1J-gHMNAv9PlgRRX5q0UbCC5O96PKTaZA
+### 🤖 Ro AI Barista
+Integrated with **Google Gemini 3 Flash**, the AI Barista provides real-time, context-aware recommendations. Users can describe their mood or cravings, and the assistant suggests the perfect match from the Ro Coffee menu.
 
-## Run Locally
+### 🧪 Interactive Coffee Lab
+A technical tool for specialty coffee enthusiasts. Select your brewing method (V60, Chemex, Aeropress, etc.) to calculate the precise "Golden Ratio" of coffee-to-water, complete with grind size and temperature guides.
 
-**Prerequisites:**  Node.js
+### 🔍 The Brew Finder
+A personalized quiz that guides users to discover their ideal drink based on their current vibe and flavor preferences.
 
+### 📜 Digital & Print-Ready Menu
+A high-performance menu view featuring:
+- **Responsive Layout**: Optimized for mobile and desktop.
+- **QR Integration**: Auto-generated QR codes for easy in-store access.
+- **Print Optimization**: Custom CSS for high-quality PDF exports or physical prints.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### 📸 Space Gallery
+A curated visual section showcasing the minimalist design and atmosphere of the Mersin location.
+
+## 🛠 Tech Stack
+
+- **React 19** & **TypeScript**
+- **Tailwind CSS** (Custom theme & easing)
+- **Google GenAI SDK** (Gemini 3 Flash)
+- **Playfair Display** (Typography for elegance)
+- **Inter** (Typography for readability)
+
+## 📦 Getting Started
+
+1. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+2. **Set up environment variables**
+   Create a `.env` file in the root directory:
+   ```env
+   API_KEY=your_gemini_api_key_here
+   ```
+
+3. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+
+## 📐 Design Philosophy
+
+Ro Coffee's digital presence is built on a "less is more" philosophy. The interface uses a sophisticated palette of **Ro Beige**, **Ro Dark**, and **Ro Accent (Gold)** to create a calm, premium atmosphere that mirrors the physical café experience.
+
+---
+
+### Credits
+**Designed & Developed by Amro Studio.**
+*All creative assets and code are attributed to Amro Studio.*
