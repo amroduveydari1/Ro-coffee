@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ro Coffee | Mersin</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg width='100' height='100' viewBox='0 0 400 300' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M90 280V120C90 75.8172 125.817 40 170 40H220V110H185C171.193 110 160 121.193 160 135V280H90Z' fill='%233b4b5e'/><path fill-rule='evenodd' clip-rule='evenodd' d='M280 280C346.274 280 400 226.274 400 160C400 93.7258 346.274 40 280 40C213.726 40 160 93.7258 160 160C160 226.274 213.726 280 280 280ZM280 205C304.853 205 325 184.853 325 160C325 135.147 304.853 115 280 115C255.147 115 235 135.147 235 160C235 184.853 255.147 205 280 205Z' fill='%233b4b5e'/></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            colors: {
+              ro: {
+                dark: '#2d3e50',
+                blue: '#3b4b5e',
+                beige: '#fdfcf8',
+                accent: '#d4a373'
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html { scroll-behavior: smooth; }
+      body { background-color: #fdfcf8; color: #3b4b5e; overflow-x: hidden; }
+      .fade-in { animation: fadeIn 0.8s ease-out forwards; }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      
+      .nav-link {
+        position: relative;
+        padding-bottom: 2px;
+      }
+      .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 1.5px;
+        bottom: 0;
+        left: 0;
+        background-color: #d4a373;
+        transition: width 0.3s cubic-bezier(0.65, 0, 0.35, 1);
+      }
+      .nav-link:hover::after {
+        width: 100%;
+      }
+
+      /* Advanced Print Styles for PDF Export */
+      @media print {
+        @page {
+          size: A4;
+          margin: 0;
+        }
+        body {
+          background-color: white !important;
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+        /* Hide everything except the print-safe area */
+        nav, footer, #gemini-assistant, .no-print, button {
+          display: none !important;
+        }
+        main {
+          display: block !important;
+        }
+        .printable-menu {
+          visibility: visible !important;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          padding: 40px;
+          background: white !important;
+        }
+        .menu-category-grid {
+          display: grid !important;
+          grid-template-cols: 1fr 1fr !important;
+          gap: 40px !important;
+        }
+        .qr-section {
+          display: none !important;
+        }
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@^19.2.3",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+        "react/": "https://esm.sh/react@^19.2.3/",
+        "@google/genai": "https://esm.sh/@google/genai@^1.34.0"
+      }
+    }
+    </script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
