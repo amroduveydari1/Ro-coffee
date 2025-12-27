@@ -1,4 +1,4 @@
-# Ro Coffee | Digital Brand Experience
+# Ro Coffee 
 
 An elegant, minimalist web application for **Ro Coffee**, a specialty coffee roastery and café based in Yenişehir, Mersin. This project focuses on high-fidelity aesthetics, seamless user interaction, and advanced AI integration to reflect the café's dedication to craft.
 
